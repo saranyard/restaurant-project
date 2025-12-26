@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First</title>
+    <link rel="stylesheet" href="first.css">
+    <script src="script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header class="head">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="buffet.html">Reservation</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </header>
+
+    <div class="head1">
+        <div class="logo">
+            <span class="book">Book</span><span class="table">mytable</span>
+            <p>Never wait for your meal</p>
+        </div>
+
+        <div class="search-box">
+            <input type="search" placeholder="Search">
+            <span class="search-icon">🔍︎</span>
+        </div>
+
+        <div class="reg-btn" onclick="reg()">
+            <!-- <a href="register.html" type="button" onclick="reg()">Register</a> -->
+            <button>Register</button>
+        </div>
+    </div>
+
+
+
+    <!-- Register page content starts here -->
+
+
+    <div class="frame" id="frame">
+        <div class="card">
+            <span class="title">Register Free !</span>
+            <span class="close" onclick="cl()">✕</span>
+            <input type="email" placeholder="Enter your e-mail" class="input1">
+
+            <input type="password" placeholder="Password" class="input1">
+
+            <div class="actions">
+                <button class="login-btn" onclick="login()">Login</button>
+                <a href="#" class="forgot">Forget your password?</a>
+            </div>
+
+            <div class="divider">
+                <span></span>
+                <p>Sign Up Using</p>
+                <span></span>
+            </div>
+
+            <div class="social">
+                <div><img src="images/icons.png" alt="no img"></div>
+            </div>
+
+
+            <p class="last">
+                Don't have an account ?
+                <button onclick="createaccount()">Create New Account</button>
+            </p>
+        </div>
+
+
+        <!-- RIGHT IMAGE -->
+        <div class="image" id="img">
+        </div>
+
+    </div>
+    <!-- Register page content close here -->
+     
+
+
+
+
+    
+
+
+    <!-- create new account page starts here -->
+    <div class="modal-wrapper" id="modal">
+
+        <div class="modal-image">
+            <img src="images/Frame 30679.png" alt="no img">
+        </div>
+
+        <div class="modal-form">
+            <span class="close" onclick="cl1()">X</span>
+
+            <h2>Sign Up</h2>
+
+            <input type="text" placeholder="Full Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+
+            <button onclick="home()">Sign Up</button>
+
+            <p class="login-text">
+                Already have an account ?
+                <button onclick="log()">Log in</button>
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- creates new account page close here -->
+
+
+
+
+
+
+
+
+    <div class="hero">
+        <p>Book Table at your favourite restaurent and</p>
+
+        <p> get served instantly</p>
+
+    </div>
+
+
+
+    <h2 class="explore">Explore restaurent your city</h2>
+
+    <div class="viewport" onclick="load()">
+        <div class="track">
+            <div><img src="images/hydrabad.jpg">
+                <span class="city">Bangalore</span>
+            </div>
+
+            <div><img src="images/mumbai.jpg">
+                <span class="city">Mumbai</span>
+            </div>
+
+            <div><img src="images/hydrabad.jpg">
+                <span class="city">Hydrabad</span>
+            </div>
+            <div><img src="images/chennai.png">
+                <span class="city">Chennai</span>
+            </div>
+            <div><img src="images/hydrabad.jpg">
+                <span class="city">Bangalore</span>
+            </div>
+        </div>
+    </div>
+
+
+    <h2 class="explore">How it works</h2>
+    <div class="icon-flex">
+        <div class="f">
+            <img src="images/search1.png" alt="no img">
+            <p>Search restaurent</p>
+        </div>
+        <div class="f">
+            <img src="images/date and time.png" alt="no img">
+            <p>Select date/time</p>
+        </div>
+        <div class="f">
+            <img src="images/table.png" alt="no img">
+            <p>Reserve your table</p>
+        </div>
+        <div class="f">
+            <img src="images/spoon.png" alt="no img">
+            <p>Get served instantly</p>
+        </div>
+    </div>
+
+    <div class="review">
+        <p class="rev-content">Customer Reviews</p>
+    </div>
+
+    <div class="person-icon">
+        <div class="i">
+            <img src="images/Photo by Patrick T'Kindt.png" alt="no img">
+            <p>Aman p.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Great and excellent service</p>
+        </div>
+        <div class="i">
+            <img src="images/Photo by Lesly Juarez.png" alt="no img">
+            <p>David p.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Great and excellent service</p>
+        </div>
+        <div class="i">
+            <img src="images/Photo by H Liu.png" alt="no img">
+            <p>Gopi p.</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>Flexible Service</p>
+        </div>
+    </div>
+
+
+    <div class="map">
+        <div>
+            <img src="images/map.png" alt="no img">
+        </div>
+        <div class="offer">
+            <h2>Get offers in Your inbox</h2>
+            <div class="inner">
+                <input type="text" name="a" id="a" placeholder="Enter your mail" class="in">
+                <button class="btn">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="main">
+            <div>
+                <ul>
+                    <li><b>Company</b></li>
+                    <li>About Us</li>
+                    <li>Contat Us</li>
+                    <li>Customer Reviews</li>
+                    <li>Add Your Restaurent</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <ul>
+                    <li><b>Policy Info</b></li>
+                    <li>Terms & Conditions</li>
+                    <li>Cookies Policy</li>
+                    <li>Cancellation Policy</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+
+
+
+            <div>
+                <ul>
+                    <li><b>Cities</b></li>
+                    <li>Chennai</li>
+                    <li>Banglore</li>
+                    <li>Hyderabad</li>
+                    <li>Mumbai</li>
+                </ul>
+            </div>
+
+
+            <div>
+                <ul>
+                    <li><b>Help</b></li>
+                    <li>Booking Status</li>
+                    <li>Add Restaurent</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="sub">
+            <hr class="line">
+            <div class="rest">
+                <div>
+                    <ul>
+                        <li>Restaurent in Chennai</li>
+                        <li>Restaurent in Pune</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Restaurent in Bangalore</li>
+                        <li>Restaurent in Kolkata</li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <ul>
+                        <li>Restaurent in Hyderabad</li>
+                        <li>Restaurent in Mumbai</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="rights">
+            <div class="footer-container">
+
+                <div class="footer-center">
+                    <p>© 2025 Book My Table.Co.in. All rights reserved.</p>
+
+                    <div class="social-icons">
+
+                        <img src="images/fb.png" alt="no img">
+                        <img src="images/twitter.png" alt="no img">
+                        <img src="images/insta.png" alt="no img">
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p><i class="fas fa-phone"></i> (123) 8940-985498</p>
+                    <p><i class="fas fa-envelope"></i> info@bookmytable.com</p>
+                    <p><i class="fas fa-location-dot"></i> Chennai 54375387</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
